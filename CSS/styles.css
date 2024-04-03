@@ -164,6 +164,7 @@ nav a {
 .service_boxes {
     margin-top: 50px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .sv_icon {
@@ -176,12 +177,13 @@ nav a {
 .sv_title {
     margin: 15px 0;
     font-size: 25px;
+    color:gray;
 
 }
 
 .sv_desc {
     font-size: 18px;
-    color: white;
+    color: gray;
     line-height: 25px;
 
 }
@@ -205,39 +207,52 @@ nav a {
 
 
 
+
+
 /* gallery section starts */
 .gallery {
-    padding-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding: 20px 0;
 }
 
 .gallery_container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    grid-gap: 20px; /* Adjust spacing between images */
+}
+
+.gallery_container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:5px ;
 }
 
 
+/* Zoom effect on hover */
+.gallery_container img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
 
-
-
-/* Centering service boxes when screen width reaches 776 pixels */
-
-@media only screen and (min-width: 776px) and (max-width: 991px) {
-    .service_boxes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .service_boxes .single_box {
-        margin: 0 15px 30px 15px;
-        /* Adjusting margin to provide spacing between centered boxes */
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .gallery_container {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row for smaller screens */
     }
 }
+
+@media (max-width: 480px) {
+    .gallery_container {
+        grid-template-columns: 1fr; /* 1 image per row for even smaller screens */
+    }
+}
+
