@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* full body */
+.body {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    /* background-image: url(../images/banner.jpg); */
+    background-image: url(../images/banner\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background image covers the entire container */
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding:5px 50px;
+}
+
+/* navbar starts */
+
+.navbar {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav_items {
+    display: flex;
+    align-items: center;
+}
+
+.nav_items li {
+    padding: 15px 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    /* color:white; */
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.logo {
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* hamburger show only small devices */
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger .line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+/* hero or banner section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner_content {
+    text-align: center;
+}
+
+.banner .banner_title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+    color:white;
+}
+
+.desc {
+    margin: 25px 0;
+    font-size: 18px;
+    color: gray;
+    max-width: 600px;
+}
+
+.btn_primary {
+    text-transform: capitalize;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.btn:hover{
+    text-transform: capitalize;
+    padding: 15px 30px;
+    background-color: rgb(236, 15, 15);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* main section > service benefit section */
+.service_benefit {
+    margin-top: 80px;
+    padding: 70px 0px;
+    background-color: #95ba92;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.service_container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+.sub_content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #00274B;
+}
+
+/* boxes starts */
+
+.service_boxes {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.sv_icon {
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(216, 146, 15);
+
+}
+
+.sv_title {
+    margin: 15px 0;
+    font-size: 25px;
+
+}
+
+.sv_desc {
+    font-size: 18px;
+    color: white;
+    line-height:25px;
+
+}
+
+.service_boxes .sigle_box {
+    max-width: 390px;
+    padding: 25px;
+    text-align: center;
+    float: left;
+}
+
+
+/* gallery section starts */
+.gallery{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Centering service boxes when screen width reaches 776 pixels */
+
+
+@media only screen and (min-width: 776px) and (max-width: 991px) {
+    .service_boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .service_boxes .single_box {
+        margin: 0 15px 30px 15px;
+        /* Adjusting margin to provide spacing between centered boxes */
+    }
+}
+
+
+
