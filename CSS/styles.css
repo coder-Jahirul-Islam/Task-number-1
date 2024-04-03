@@ -212,14 +212,7 @@ nav a {
 
 
 
-
-
-
-
-
-
 /* Centering service boxes when screen width reaches 776 pixels */
-
 
 @media only screen and (min-width: 776px) and (max-width: 991px) {
     .service_boxes {
@@ -235,6 +228,14 @@ nav a {
         /* Adjusting margin to provide spacing between centered boxes */
     }
 }
+
+
+
+
+
+
+
+
 
 
 
