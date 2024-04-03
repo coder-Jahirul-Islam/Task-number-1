@@ -117,9 +117,11 @@ nav a {
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+    cursor: pointer;
 }
 
-.btn:hover {
+
+.btn_primary:hover {
     text-transform: capitalize;
     padding: 15px 30px;
     background-color: rgb(236, 15, 15);
@@ -127,6 +129,7 @@ nav a {
     border-radius: 5px;
     border: none;
 }
+
 
 
 /* main section > service benefit section */
@@ -162,10 +165,12 @@ nav a {
 /* boxes starts */
 
 .service_boxes {
-    margin-top: 50px;
+    margin-top: 70px;
     overflow: hidden;
     cursor: pointer;
+    
 }
+
 
 .sv_icon {
     font-weight: 600;
@@ -177,7 +182,7 @@ nav a {
 .sv_title {
     margin: 15px 0;
     font-size: 25px;
-    color:gray;
+    color: gray;
 
 }
 
@@ -188,7 +193,6 @@ nav a {
 
 }
 
-
 .service_boxes .sigle_box {
     max-width: 390px;
     padding: 25px;
@@ -198,6 +202,7 @@ nav a {
     /* Adding initial box shadow */
     transition: box-shadow 0.3s ease;
     /* Adding transition for smooth effect */
+    margin-bottom: 70px;
 }
 
 .service_boxes .sigle_box:hover {
@@ -216,19 +221,21 @@ nav a {
 
 .gallery_container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
-    grid-gap: 20px; /* Adjust spacing between images */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 images per row */
+    grid-gap: 20px;
+    /* Adjust spacing between images */
 }
 
 .gallery_container img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s;
-    border-radius:10px ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:5px ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 5px;
 }
 
 
@@ -236,23 +243,24 @@ nav a {
 .gallery_container img:hover {
     transform: scale(1.1);
     cursor: pointer;
-    border-radius:5px ;
-    -webkit-border-radius:5px ;
-    -moz-border-radius:5px ;
-    -ms-border-radius:5px ;
-    -o-border-radius:5px ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
     .gallery_container {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 images per row for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .gallery_container {
-        grid-template-columns: 1fr; /* 1 image per row for even smaller screens */
+        grid-template-columns: 1fr;
+        /* 1 image per row for even smaller screens */
     }
 }
-
