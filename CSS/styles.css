@@ -157,6 +157,7 @@ nav a {
 }
 
 .section_title {
+    font-size: 50px;
     font-weight: 600;
     font-size: 2rem;
     color: #00274B;
@@ -187,7 +188,7 @@ nav a {
 
 .sv_desc {
     font-size: 18px;
-    color:black;
+    color: black;
     line-height: 25px;
     padding: 10px;
 
@@ -267,8 +268,9 @@ nav a {
     font-size: 35px;
     margin-bottom: 20px;
 }
-.em_title span{
-    color:red;
+
+.em_title span {
+    color: red;
     cursor: pointer;
     transition: 0.6s;
     -webkit-transition: 0.6s;
@@ -276,15 +278,17 @@ nav a {
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
 }
-.em_title span:hover{
+
+.em_title span:hover {
     font-size: 58px;
     margin-bottom: 20px;
 }
+
 .em_title_desc {
     color: black;
     font-size: 20px;
     max-width: 450;
-    margin-top:30px auto ;
+    margin-top: 30px auto;
 
 }
 
@@ -301,7 +305,8 @@ nav a {
     padding: 0 10px;
     margin-bottom: 20px;
 }
-.em_desc{
+
+.em_desc {
     padding: 0 10px;
     color: black;
     cursor: pointer;
@@ -312,7 +317,8 @@ nav a {
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
 }
-.em_desc:hover{
+
+.em_desc:hover {
     margin-top: -5px;
     padding: 0 10px;
     color: black;
@@ -326,12 +332,12 @@ nav a {
     gap: 30px;
 }
 
-.single_employee img{
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+.single_employee img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 /* innovations_solution styles starts */
@@ -351,14 +357,14 @@ nav a {
 
 .innovations_solution .img_container {
     flex: 1;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 .innovations_solution .img_container img {
     width: 100%;
     max-width: 100%;
     display: block;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .innovations_solution .text_container {
@@ -380,24 +386,23 @@ nav a {
 
 
 /* Styles for btn_center div */
-.innovations_solution .btn_center {
+.btn_center {
+    background-color: #fff;
     text-align: center;
-    margin-top: 20px;
-    padding: 20px; /* Add padding here */
+    margin-top: 70px;
+    padding: 20px;
+    /* Add padding here */
 }
 
-.btn_center .solution_title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
- .btn_center .solution_desc {
-    font-size: 16px;
+
+.btn_center .solution_desc {
+    font-size: 20px;
     color: #666;
-    margin-bottom: 20px;
+    margin: 20px 0;
+
 }
 
- .btn_center .btn_primary {
+.btn_center .btn_primary {
     text-transform: capitalize;
     padding: 15px 30px;
     background-color: red;
@@ -409,7 +414,7 @@ nav a {
     cursor: pointer;
 }
 
- .btn_center .btn_primary:hover {
+.btn_center .btn_primary:hover {
     background-color: rgb(236, 15, 15);
 }
 
@@ -417,7 +422,28 @@ nav a {
 
 
 
+/* Social links section styles */
+.social_links {
+    text-align: center;
+    margin-top: 50px;
+}
 
+.social_container {
+    display: flex;
+    justify-content: left;
+}
+
+.social_link {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social_link:hover {
+    color: #666;
+}
 
 
 
