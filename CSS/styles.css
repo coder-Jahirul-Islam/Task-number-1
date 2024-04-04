@@ -168,7 +168,7 @@ nav a {
     margin-top: 70px;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
 
@@ -182,13 +182,14 @@ nav a {
 .sv_title {
     margin: 15px 0;
     font-size: 35px;
-    color: gray;
+    color: rgb(61, 158, 48);
 }
 
 .sv_desc {
     font-size: 18px;
-    color: gray;
+    color:black;
     line-height: 25px;
+    padding: 10px;
 
 }
 
@@ -250,29 +251,87 @@ nav a {
 }
 
 /* our employees sections starts */
-.employees{
+.employees {
     margin-top: 70px;
 }
 
-.employes_content{
+.employes_container {
     text-align: center;
-    max-width:800px ;
-    justify-content: center;
+    max-width: 800px;
     margin: 0 auto;
     padding: 80px;
 }
-.em_title{
+
+.em_title {
     font-size: 35px;
-margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+.em_title span{
+    color:red;
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.em_title span:hover{
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+.em_title_desc {
+    color: black;
+    font-size: 20px;
+    max-width: 450;
+    margin-top:30px auto ;
+
+}
+
+.em_name {
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.em_position_role {
+    font-size: 20px;
+    color: red;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 .em_desc{
-    color:black;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
     font-size: 20px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.em_desc:hover{
+    margin-top: -5px;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
 }
 
 
+.our_employee_team {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
-
+.single_employee img{
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
 
 
 
