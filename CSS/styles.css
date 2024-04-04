@@ -253,6 +253,7 @@ nav a {
 /* our employees sections starts */
 .employees {
     margin-top: 70px;
+
 }
 
 .employes_container {
@@ -332,6 +333,86 @@ nav a {
     -ms-border-radius:5px;
     -o-border-radius:5px;
 }
+
+/* innovations_solution styles starts */
+.innovations_solution {
+    margin-top: 70px;
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.innovations_solution .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.innovations_solution .img_container {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.innovations_solution .img_container img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 5px; 
+}
+
+.innovations_solution .text_container {
+    flex: 1;
+}
+
+.innovations_solution .section_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.innovations_solution .section_text {
+    font-size: 16px;
+    color: #666;
+    padding-right: 20px;
+}
+
+
+
+/* Styles for btn_center div */
+.innovations_solution .btn_center {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Add padding here */
+}
+
+.btn_center .solution_title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+ .btn_center .solution_desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+ .btn_center .btn_primary {
+    text-transform: capitalize;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+ .btn_center .btn_primary:hover {
+    background-color: rgb(236, 15, 15);
+}
+
 
 
 
